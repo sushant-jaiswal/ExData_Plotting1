@@ -22,7 +22,7 @@ lines(sourceData$Date_Time, sourceData$Sub_metering_2, col = "Red")
 lines(sourceData$Date_Time, sourceData$Sub_metering_3, col = "Blue")
 
 #Add legend
-legend("topright", legend = c('Sub_metering_1', 'Sub_metering_2', 'Sub_metering_3'), col = c('black', 'red', 'blue'), lty = c(1, 1, 1))
+legend("topright", legend = c('Sub_metering_1', 'Sub_metering_2', 'Sub_metering_3'), col = c('black', 'red', 'blue'), lty = c(1, 1, 1), bty = "n")
 	   
 #Create plot on bottom right
 plot(sourceData$Date_Time, sourceData$Global_reactive_power, xlab = "datetime", ylab = "Global_reactive_power", type = "l")
